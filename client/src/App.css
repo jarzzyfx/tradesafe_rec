@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  font: 500 0.85rem "Poppins";
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bg_padding: 4rem;
+  --md_padding: 2rem;
+  --sm_padding: 1rem;
+
+  --main_cl: #0a78b3;
+  --second_cl: #139ad4;
+  --third_cl: #2eb7e7;
+
+  --bg_cl: #fff;
+  --main_text_cl: ;
+  --sec_text_cl: ;
+}

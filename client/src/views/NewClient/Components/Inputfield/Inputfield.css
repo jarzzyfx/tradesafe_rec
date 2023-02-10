@@ -1,0 +1,56 @@
+.inpField {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+}
+
+.inpField input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid var(--second_cl);
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 0rem 1rem;
+    transition: border-radius 0.3s linear, border 0.3s linear;
+}
+
+.inpField input:hover {
+    border-color: var(--third_cl);
+}
+
+.inpField input:focus {
+    background-color: #0a78b307;
+    border: none;
+    border: 1px solid var(--second_cl);
+    border-radius: 4px;
+}
+
+.inpField label {
+    position: absolute;
+    font-size: 1.2rem;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    font-weight: 400;
+    color: var(--main_text_cl);
+    opacity: 0.5;
+    transition: top 0.3s linear, left 0.3s linear, font-size 0.3s linear;
+}
+
+.Input:focus~.form__label,
+.Input:not(:placeholder-shown).Input:not(:focus)~.form__label {
+    top: -0.5rem;
+    font-size: 0.85rem;
+    color: var(--main_cl);
+    left: 0.8rem;
+    font-weight: 500;
+    background-color: var(--bg_cl);
+    opacity: 1;
+}
