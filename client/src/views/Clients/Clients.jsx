@@ -1,5 +1,7 @@
 import React from 'react';
 import './Clients.css'
+import Client from './components/Client/Client';
+import { clientsMockData } from '../../clientsMockData';
 
 const Clients = () => {
   return (
@@ -10,7 +12,12 @@ const Clients = () => {
           <button className="search_btn">Search</button>
         </div>
       </header>
-      <main className='client_body'>body</main>
+      <main className='client_body'>
+        {clientsMockData.map(data => {
+          
+          return (<Client key={data.id} clientdata={data}/>)
+        })}
+      </main>
     </div>
   )
 }

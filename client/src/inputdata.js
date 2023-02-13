@@ -41,4 +41,10 @@ export const inputdata = [
         inp_name:"User phone number" ,
         inp_text: "Phone Number",
     },
+    {
+        id: 'currency',
+        inp_type: "text",
+        inp_name:"User Currency" ,
+        inp_text: "Currency",
+    },
 ]

@@ -1,0 +1,53 @@
+.client{
+    width: 150px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.205);
+    transition: .2s ease-in-out;
+}
+.client:hover{
+    border: 1px solid var(--main_cl);
+}
+
+/* clinet img */
+.client_img{
+    width:100%;
+    height:70%;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.275);
+}
+.client_img > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* client description */
+.client_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.client_desc > h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--main_cl);
+}
+
+.client_desc > p{
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.client_desc > p > span{
+    color: var(--main_cl);
+    font-weight: bold;
+}
+.client_desc > span{
+font-size: 10px;
+    font-weight: 300;
+    text-transform: capitalize;
+}

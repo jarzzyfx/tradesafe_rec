@@ -1,50 +1,54 @@
-.clients{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.clients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.client_header{
-    width: 100%;
-    padding: 1rem 0rem;
-    display: grid;
-    place-content: center;
+.client_header {
+  width: 100%;
+  padding: 1rem 0rem;
+  display: grid;
+  place-content: center;
 }
 
-.search_box{
-    width: 70rem;
-    min-width: 90%;
-    border-radius: 4px;
-    height:4rem;
-    padding: 0.4rem;
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.075);
+.search_box {
+  border-radius: 4px;
+  height: 4rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.075);
 }
-.search_btn{
-    background:var(--main_cl) ;
-    border: none;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    color: white;
-    cursor: pointer;
-    height: 100%;
-    justify-self: flex-end;
+.search_btn {
+  background: var(--main_cl);
+  border: none;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  justify-self: flex-end;
 }
-.inp_field{
-    border: none;
-    outline: none;
-    padding: 0.4rem;
-    height: 100%;
-    width: 100%;
-    background: none;
-    font-size: 1.5rem;
+.inp_field {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  height: 100%;
+  width: 100%;
+  background: none;
+  font-size: 1.5rem;
 }
-.inp_field::placeholder{
-    font-size: 1.5rem;
+.inp_field::placeholder {
+  font-size: 1.5rem;
+}
+.client_body{
+  display:flex;
+  gap: 20px;
+  justify-content: flex-start;
+  
 }
