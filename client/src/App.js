@@ -1,15 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar, Footer } from './global';
-import { Clients, NewClient } from './views';
+import { ClientDetails, Clients, NewClient, Homepage, Auth} from './views';
 
 function App() {
   return (
     <div className="app">
-     <Navbar/>
+    
       <Routes>
-        <Route path="/" element={<NewClient/>}/>
-        <Route path="/clients" element={<Clients/>}/>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path='/auth' element={<Auth/>}/>
+          {/* <Route path="/clients" >
+            <Route index element={<Clients/>}/>
+            <Route path=":id" element={<ClientDetails/>}/>
+          </Route> */}
       </Routes>
      <Footer/>
     </div>

@@ -1,10 +1,15 @@
 import React from 'react';
 import './Client.css';
 import {Link} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+
 
 const Client = ({clientdata}) => {
+
+  const {id} = useParams()
+  
   return (
-    <Link to="clients/{clientdata.id}">
+    <Link to={`/clients/${clientdata.id}`}>
       <div className="client" >
        <section className="client_img">
          <img src={clientdata.personal_info.img ? clientdata.personal_info.img : "user img"} alt={clientdata.personal_info.first_name}/>

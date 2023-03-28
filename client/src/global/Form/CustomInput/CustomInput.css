@@ -1,0 +1,26 @@
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_group > label{
+    text-transform: capitalize;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.input{
+    background: transparent;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input.errinp {
+    border: 2px solid crimson;
+}
+.err{
+    font-size: 9px;
+    color: crimson;
+}

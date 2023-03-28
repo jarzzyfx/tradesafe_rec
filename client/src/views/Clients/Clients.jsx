@@ -4,6 +4,7 @@ import Client from './components/Client/Client';
 import { clientsMockData } from '../../clientsMockData';
 
 const Clients = () => {
+
   return (
     <div className="clients">
       <header className="client_header">

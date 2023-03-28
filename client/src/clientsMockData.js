@@ -3,6 +3,7 @@ import { img1 } from "./mockImageData"
 export const clientsMockData = [
     {
         id: 1,
+        id_path: "1",
         personal_info: {
         first_name: "mark",
         last_name: "wilbur",
@@ -42,6 +43,7 @@ export const clientsMockData = [
     },
     {
         id: 2,
+        id_path: "2",
         personal_info: {
         first_name: "dave",
         last_name: "godson",
@@ -80,6 +82,7 @@ export const clientsMockData = [
     },
     {
         id: 3,
+        id_path: "3",
         personal_info: {
         first_name: "elizabeth",
         last_name: "Dom",
@@ -118,6 +121,7 @@ export const clientsMockData = [
     },
     {
         id: 4,
+        id_path: "4",
         personal_info: {
         first_name: "william",
         last_name: "shaw",
@@ -156,6 +160,7 @@ export const clientsMockData = [
     },
     {
         id: 5,
+        id_path: "5",
         personal_info: {
         first_name: "shane",
         last_name: "chukwu",
