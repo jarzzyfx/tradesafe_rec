@@ -1,7 +1,11 @@
-import './App.css';
+
+import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar, Footer } from './global';
-import { ClientDetails, Clients, NewClient, Homepage, Auth} from './views';
+import { Auth} from './views';
+import Homepage from './pages/Homepage/Homepage';
+import Darshboard from './views/Dashboard/Darshboard';
+import Clients from './views/Dashboard/Clients/Clients';
 
 function App() {
   return (
@@ -10,10 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path='/auth' element={<Auth/>}/>
-          {/* <Route path="/clients" >
-            <Route index element={<Clients/>}/>
-            <Route path=":id" element={<ClientDetails/>}/>
-          </Route> */}
+        <Route path='/dashboard' element={<Darshboard/>}/>
+        <Route path='/dashboard/clients' element={<Clients/>}/>
       </Routes>
      <Footer/>
     </div>

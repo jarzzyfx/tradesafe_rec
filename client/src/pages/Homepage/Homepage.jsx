@@ -6,7 +6,7 @@ const Homepage = () => {
     <div>
         Get started with our company database.
        
-            <Link to="/auth"> <button className='btn'>Get Started Now </button></Link>
+            <Link to="/auth"> <button className='button btn'>Get Started Now </button></Link>
        
     </div>
   )
