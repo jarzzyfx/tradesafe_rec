@@ -1,4 +1,3 @@
 export { default as Navbar} from './Navbar/Navbar';
 export { default as Footer} from './Footer/Footer';
-export { default as UserForm} from './Form/Form';
 export { default as Backbtn} from './Backbtn/Backbtn';

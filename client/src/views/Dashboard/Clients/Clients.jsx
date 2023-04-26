@@ -1,7 +1,8 @@
 import React from 'react';
 import './Clients.css'
-import Client from './components/Client/Client';
-import { clientsMockData } from '../../clientsMockData';
+import {clientsMockData} from '../../../clientsMockData'
+import Client from './components/Client/Client'
+
 
 const Clients = () => {
 
