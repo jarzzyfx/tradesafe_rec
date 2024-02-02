@@ -13,13 +13,13 @@ const Login = () => {
   const [cookies, setCookies] = useCookies(["access_token"]);
 
   const submit = async (values, actions) => {
-    console.log('this is clicked')
     try {
       const response = await axios.post("http://localhost:5000/auth/login", 
-        values
+      values
       );
+      localStorage.setItem("user", JSON.stringify(response.data.newUser))
       setCookies("access_token", response.data.token);
-      window.localStorage.setItem("USERID", response.data.userID);
+      window.localStorage.setItem("USERID", JSON.stringify(response.data.userID));
       navigate("/dashboard");
       actions.resetForm();
     } catch (error) {

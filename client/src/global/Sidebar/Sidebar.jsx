@@ -6,6 +6,8 @@ import { Users } from 'lucide-react'
 import { MessageSquare } from 'lucide-react'
 
 const Sidebar = () => {
+
+
   return (
     <div className="w-[20%] h-screen border-r-2 border-gray-400">
       <h2 className='font-bold text-3xl mb-8 mt-4'>User Dashboard</h2>

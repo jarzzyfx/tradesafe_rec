@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken'
 export const LoginUserController = async (req, res) => {
     const values = req.body;
     const user = await UserModel.findOne({email: values.email});
+    const newUser = values
     
     if (!user) {
         res.status(404).json({ error: 'User does not exist' });
@@ -17,6 +18,6 @@ if(!isPwdValid){
     return
 }
 const token = jwt.sign({id: user._id}, "secret")
-res.json({token, userID: user._id})
+res.json({token, userID: user._id, newUser})
 }
     
